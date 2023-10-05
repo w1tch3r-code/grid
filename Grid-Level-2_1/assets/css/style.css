@@ -46,7 +46,6 @@ body {
     max-width: 56.875rem;
     background-color: white;
     margin: 0 auto;
-    overflow: hidden;
 }
 
 .section__gallery {
@@ -109,9 +108,10 @@ article > div {
     position: absolute;
     width: 300px;
     height: 300px;
-    top: 50%;
+    bottom: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, 50%);
+    transform: translate(-50%, 50%);
     background-color: rgba(0, 0, 0, 0.7);
     display: flex;
     justify-content: center;
@@ -121,9 +121,8 @@ article > div {
 }
 
 article > div:hover {
-    top: 150%;
-    left: 50%;
     background-color: rgba(0, 0, 0, 0);
+    color: rgba(255, 255, 255, 0);
     letter-spacing: 1rem;
 }
 
