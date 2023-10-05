@@ -54,7 +54,7 @@ body {
     grid-template-columns: repeat(3, 300px);
     grid-template-rows: repeat(3, 300px);
     gap: 5px;
-    overflow-y: hidden;
+    overflow: hidden;
 }
 
 article {
